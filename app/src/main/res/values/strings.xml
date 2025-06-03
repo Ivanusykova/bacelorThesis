@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">bak_python</string>
+    <string name="download">download</string>
+    <string name="login">LOGIN</string>
+    <string name="scan">SCAN</string>
+    <string name="coin_identificator">COIN IDENTIFICATOR</string>
+</resources>

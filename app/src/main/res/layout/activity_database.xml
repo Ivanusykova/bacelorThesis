@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Database"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/aboreto"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btn_scan"
+            android:layout_height="wrap_content"
+            android:text="SCAN"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:fontFamily="@font/aboreto"
+            android:background="#FFFFFF"
+            android:layout_margin="3dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:fontFamily="@font/aboreto"
+            android:background="#FFFFFF"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <Button
+            android:id="@+id/btn_favorites"
+            android:layout_height="wrap_content"
+            android:text="❤️"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:fontFamily="@font/aboreto"
+            android:background="#FFFFFF"
+            android:layout_margin="3dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <Button
+            android:id="@+id/btn_databaseD"
+            android:layout_height="wrap_content"
+            android:text="DATABASE"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:fontFamily="@font/aboreto"
+            android:background="#FFFFFF"
+            android:layout_margin="3dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+    </LinearLayout>
+    <Spinner
+        android:id="@+id/folderSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:fontFamily="@font/aboreto"
+        android:popupBackground="#FFFFFF"
+        android:textAlignment="center"
+        android:textColor="#000000"/>
+
+    <Spinner
+        android:id="@+id/textSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:popupBackground="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/btn_downloadD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="please download this first"
+        android:textSize="13sp"
+        android:textColor="#000000"
+        android:padding="10dp"
+        android:fontFamily="@font/aboreto"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/coinsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="show all texts from this year"
+        android:textSize="13sp"
+        android:textColor="#000000"
+        android:fontFamily="@font/aboreto"
+        android:background="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"/>
+
+
+
+</LinearLayout>

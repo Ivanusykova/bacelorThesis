@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favorites"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/aboreto"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btn_scanF"
+            android:layout_height="wrap_content"
+            android:text="SCAN"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:fontFamily="@font/aboreto"
+            android:background="#FFFFFF"
+            android:layout_margin="3dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <Button
+            android:id="@+id/btn_loginF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:fontFamily="@font/aboreto"
+            android:background="#FFFFFF"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <Button
+            android:id="@+id/btn_favoritesF"
+            android:layout_height="wrap_content"
+            android:text="❤️"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:fontFamily="@font/aboreto"
+            android:background="#FFFFFF"
+            android:layout_margin="3dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <Button
+            android:id="@+id/btn_databaseF"
+            android:layout_height="wrap_content"
+            android:text="DATABASE"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:fontFamily="@font/aboreto"
+            android:background="#FFFFFF"
+            android:layout_margin="3dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/savedRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_eraseF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="erase all saved images"
+        android:textSize="13sp"
+        android:textColor="#000000"
+        android:fontFamily="@font/aboreto"
+        android:background="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"/>
+</LinearLayout>

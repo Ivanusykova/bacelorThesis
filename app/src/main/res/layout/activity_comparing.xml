@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compare images"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/aboreto"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btn_scanCo"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="SCAN"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/aboreto"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_margin="3dp"/>
+
+        <Button
+            android:id="@+id/btn_loginCo"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="LOGIN"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/aboreto"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_margin="3dp"/>
+
+        <Button
+            android:id="@+id/btn_favoritesCo"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="❤️"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/aboreto"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_margin="3dp"/>
+
+        <Button
+            android:id="@+id/btn_databaseCo"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="DATABASE"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/aboreto"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_margin="3dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text_explaining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Year the coin was issued (it must be written on the tale side of the coin), number of compared images (if 0 is selected, every coin from selected year is returned in order) and wanted scan can be selected here. After selecting, compare button can be clicked"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/aboreto"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center">
+
+        <Spinner
+            android:id="@+id/yearSpinner"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:fontFamily="@font/aboreto"
+            android:popupBackground="#FFFFFF"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:visibility="visible"
+            android:maxLines="1"/>
+
+        <Spinner
+            android:id="@+id/topSpinner"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:fontFamily="@font/aboreto"
+            android:popupBackground="#FFFFFF"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:visibility="visible"
+            android:maxLines="1"/>
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_erase_screenshots"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="erase screenshots"-->
+<!--            android:textSize="13sp"-->
+<!--            android:textColor="#000000"-->
+<!--            android:background="#FFFFFF"-->
+<!--            android:fontFamily="@font/aboreto"-->
+<!--            android:maxLines="1"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:visibility="visible"/>-->
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_screenshots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:ignore="NestedWeights"
+        android:visibility="visible"
+        android:layout_margin="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btn_comparing"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="compare"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/aboreto"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_margin="3dp"
+            android:visibility="visible"/>
+
+        <Button
+            android:id="@+id/btn_recomparing"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="compare again"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/aboreto"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_margin="3dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_margin="10dp">
+
+        <ProgressBar
+            android:id="@+id/waitingBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:fontFamily="@font/aboreto"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_comparing"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/btn_databaseOpener"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="check every coin from selected cateory"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/aboreto"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginBottom="30dp"
+            android:layout_margin="3dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+</LinearLayout>

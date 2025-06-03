@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyAlertDialogTheme" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="shapeAppearanceMediumComponent">@style/NoCornerShape</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:background">#000000</item>
+        <item name="android:fontFamily">@font/aboreto</item>
+        <item name="android:backgroundDimAmount">0.5</item>
+    </style>
+
+    <style name="NoCornerShape" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">0dp</item>
+    </style>
+</resources>
